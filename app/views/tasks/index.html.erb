@@ -8,8 +8,10 @@
     <% else %>
       <i class="far fa-square"></i>
     <% end %>
-    <h2><%= link_to task.title, task%></h2>
+    <h3><%= link_to task.title.capitalize, task%></h3>
   </div>
   <% end %>
+
+  <p><i class="fas fa-plus"></i> <%= link_to "Add a new task", new_path%></p>
 
 </div>
