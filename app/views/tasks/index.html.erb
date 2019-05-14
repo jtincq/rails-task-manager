@@ -9,6 +9,9 @@
       <i class="far fa-square"></i>
     <% end %>
     <h3><%= link_to task.title.capitalize, task%></h3>
+    <h3> - <%= link_to "Delete", delete_path(task.id),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %></h3>
   </div>
   <% end %>
 
